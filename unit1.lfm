@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = -115
+  Left = 194
   Height = 504
-  Top = 327
+  Top = 180
   Width = 938
   Caption = 'Form1'
   ClientHeight = 504
   ClientWidth = 938
-  LCLVersion = '1.6.0.4'
+  LCLVersion = '1.4.4.0'
   object PageControl1: TPageControl
     Left = 24
     Height = 448
@@ -354,9 +354,9 @@ object Form1: TForm1
       object StringGrid2: TStringGrid
         Left = 224
         Height = 303
-        Top = 40
+        Top = 41
         Width = 304
-        RowCount = 15
+        RowCount = 20
         TabOrder = 3
         ColWidths = (
           64
@@ -386,7 +386,7 @@ object Form1: TForm1
         Height = 303
         Top = 41
         Width = 304
-        RowCount = 20
+        RowCount = 25
         TabOrder = 4
         ColWidths = (
           64

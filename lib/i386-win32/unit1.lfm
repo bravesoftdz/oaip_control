@@ -1,0 +1,449 @@
+object Form1: TForm1
+  Left = 194
+  Height = 504
+  Top = 180
+  Width = 938
+  Caption = 'Form1'
+  ClientHeight = 504
+  ClientWidth = 938
+  LCLVersion = '1.4.4.0'
+  object PageControl1: TPageControl
+    Left = 24
+    Height = 448
+    Top = 16
+    Width = 888
+    ActivePage = TabSheet5
+    TabIndex = 4
+    TabOrder = 0
+    TabPosition = tpBottom
+    object TabSheet1: TTabSheet
+      Caption = 'Задача 1.1'
+      ClientHeight = 420
+      ClientWidth = 880
+      object Button1: TButton
+        Left = 43
+        Height = 25
+        Top = 136
+        Width = 83
+        Caption = 'Новые цены'
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      object Label2: TLabel
+        Left = 47
+        Height = 15
+        Top = 48
+        Width = 79
+        Caption = 'Цена товара А'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 48
+        Height = 15
+        Top = 72
+        Width = 78
+        Caption = 'Цена товара Б'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 78
+        Height = 15
+        Top = 96
+        Width = 48
+        Caption = 'Процент'
+        ParentColor = False
+      end
+      object Edit1: TEdit
+        Left = 136
+        Height = 23
+        Top = 48
+        Width = 80
+        TabOrder = 1
+      end
+      object Edit2: TEdit
+        Left = 136
+        Height = 23
+        Top = 72
+        Width = 80
+        TabOrder = 2
+      end
+      object Edit3: TEdit
+        Left = 136
+        Height = 23
+        Top = 96
+        Width = 80
+        TabOrder = 3
+      end
+      object Label5: TLabel
+        Left = 272
+        Height = 15
+        Top = 48
+        Width = 77
+        Caption = 'Новая цена А:'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 275
+        Height = 15
+        Top = 72
+        Width = 76
+        Caption = 'Новая цена Б:'
+        ParentColor = False
+      end
+      object Label7: TLabel
+        Left = 368
+        Height = 1
+        Top = 48
+        Width = 1
+        ParentColor = False
+      end
+      object Label8: TLabel
+        Left = 368
+        Height = 1
+        Top = 72
+        Width = 1
+        ParentColor = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Задача 1.2'
+      ClientHeight = 420
+      ClientWidth = 880
+      object Label9: TLabel
+        Left = 24
+        Height = 15
+        Top = 16
+        Width = 194
+        Caption = 'Треугольник А(0; 0), В(8; 7) и С(7; 9)'
+        ParentColor = False
+      end
+      object Button2: TButton
+        Left = 320
+        Height = 25
+        Top = 224
+        Width = 123
+        Caption = 'Рисуем и находим'
+        OnClick = Button2Click
+        TabOrder = 0
+      end
+      object Panel1: TPanel
+        Left = 24
+        Height = 146
+        Top = 48
+        Width = 170
+        TabOrder = 1
+      end
+      object Label10: TLabel
+        Left = 560
+        Height = 15
+        Top = 16
+        Width = 173
+        Caption = 'Найти высоту hb и медиану mc'
+        ParentColor = False
+      end
+      object Label11: TLabel
+        Left = 560
+        Height = 15
+        Top = 48
+        Width = 43
+        Caption = 'Высота:'
+        ParentColor = False
+      end
+      object Label12: TLabel
+        Left = 560
+        Height = 15
+        Top = 72
+        Width = 52
+        Caption = 'Медиана:'
+        ParentColor = False
+      end
+      object Label13: TLabel
+        Left = 648
+        Height = 1
+        Top = 48
+        Width = 1
+        ParentColor = False
+      end
+      object Label14: TLabel
+        Left = 648
+        Height = 1
+        Top = 72
+        Width = 1
+        ParentColor = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Задача 1.3'
+      ClientHeight = 420
+      ClientWidth = 880
+      object Button3: TButton
+        Left = 312
+        Height = 25
+        Top = 224
+        Width = 80
+        Caption = 'Расчитать'
+        OnClick = Button3Click
+        TabOrder = 0
+      end
+      object ListBox1: TListBox
+        Left = 224
+        Height = 184
+        Top = 24
+        Width = 280
+        ItemHeight = 0
+        TabOrder = 1
+      end
+      object Label15: TLabel
+        Left = 295
+        Height = 15
+        Top = 0
+        Width = 113
+        Caption = 'Таблица мер стопки'
+        ParentColor = False
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Задача 1.4'
+      ClientHeight = 420
+      ClientWidth = 880
+      object Label16: TLabel
+        Left = 8
+        Height = 315
+        Top = 8
+        Width = 290
+        Caption = 'Двумерные массивы. Задача о выборах. '#13#10'Пусть шесть населенных пунктов, '#13#10'обозначенные номерами от 1 до 6 '#13#10'(ве­личина k), '#13#10'а пять кандидатов - номерами от 1 до 5 '#13#10'(величина n).'#13#10' Количество голосов, '#13#10'набранных кандидатами в каждом пункте, '#13#10'определяется формулой '#13#10'аk = random(10i + 50), '#13#10'где i - номер вари­анта. '#13#10'Вывести на экран '#13#10'таблицу результатов голосования,'#13#10' где значения в строках - '#13#10'данные из населенных пунктов, '#13#10'а в столб­цах - '#13#10'данные по конкретным кандидатам. '#13#10'Выполнить дополни­тельное задание '#13#10'своего варианта. '#13#10#13#10'Создать одномерный массив с искомыми данными.'
+        ParentColor = False
+      end
+      object StringGrid1: TStringGrid
+        Left = 336
+        Height = 244
+        Top = 72
+        Width = 448
+        ColCount = 10
+        RowCount = 10
+        TabOrder = 0
+        Cells = (
+          11
+          0
+          1
+          'Кандидат 1'
+          0
+          2
+          'Кандидат 2'
+          0
+          3
+          'Кандидат 3'
+          0
+          4
+          'Кандидат 4'
+          0
+          5
+          'Кандидат 5'
+          1
+          0
+          'Пункт 1'
+          2
+          0
+          'Пункт 2'
+          3
+          0
+          'Пункт 3'
+          4
+          0
+          'Пункт 4'
+          5
+          0
+          'Пункт 5'
+          6
+          0
+          'Пункт 6'
+        )
+      end
+      object Button4: TButton
+        Left = 330
+        Height = 25
+        Top = 326
+        Width = 75
+        Caption = 'Выполнить'
+        OnClick = Button4Click
+        TabOrder = 1
+      end
+      object Label17: TLabel
+        Left = 448
+        Height = 15
+        Top = 48
+        Width = 31
+        Caption = 'Ответ'
+        ParentColor = False
+      end
+      object Label18: TLabel
+        Left = 336
+        Height = 15
+        Top = 32
+        Width = 96
+        Caption = 'Номер кандидата'
+        ParentColor = False
+      end
+      object Label19: TLabel
+        Left = 336
+        Height = 15
+        Top = 48
+        Width = 46
+        Caption = 'Голосов'
+        ParentColor = False
+      end
+      object Label20: TLabel
+        Left = 448
+        Height = 15
+        Top = 32
+        Width = 31
+        Caption = 'Ответ'
+        ParentColor = False
+      end
+      object Label21: TLabel
+        Left = 336
+        Height = 15
+        Top = 8
+        Width = 521
+        Caption = ' Кто из кандидатов набрал максимальное количество голосов во втором населённом пункте?'
+        ParentColor = False
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Задача 1.5'
+      ClientHeight = 420
+      ClientWidth = 880
+      object Button5: TButton
+        Left = 640
+        Height = 25
+        Top = 376
+        Width = 104
+        Caption = 'Сумма налогов'
+        TabOrder = 0
+      end
+      object Edit4: TEdit
+        Left = 80
+        Height = 23
+        Top = 41
+        Width = 80
+        TabOrder = 1
+      end
+      object Label22: TLabel
+        Left = 0
+        Height = 15
+        Top = 41
+        Width = 73
+        Caption = 'Оплата труда'
+        ParentColor = False
+      end
+      object Label23: TLabel
+        Left = 0
+        Height = 15
+        Top = 88
+        Width = 37
+        Caption = 'Ставка'
+        ParentColor = False
+      end
+      object Edit5: TEdit
+        Left = 80
+        Height = 23
+        Top = 88
+        Width = 80
+        TabOrder = 2
+      end
+      object StringGrid2: TStringGrid
+        Left = 224
+        Height = 303
+        Top = 41
+        Width = 304
+        RowCount = 20
+        TabOrder = 3
+        ColWidths = (
+          64
+          26
+          64
+          64
+          64
+        )
+        Cells = (
+          4
+          1
+          0
+          '№'
+          2
+          0
+          'ЗП'
+          3
+          0
+          'Налог'
+          4
+          0
+          'Дней'
+        )
+      end
+      object StringGrid3: TStringGrid
+        Left = 552
+        Height = 303
+        Top = 41
+        Width = 304
+        RowCount = 25
+        TabOrder = 4
+        ColWidths = (
+          64
+          23
+          64
+          64
+          64
+        )
+        Cells = (
+          4
+          1
+          0
+          '№'
+          2
+          0
+          'ЗП'
+          3
+          0
+          'Налог'
+          4
+          0
+          'Дней'
+        )
+      end
+      object Label24: TLabel
+        Left = 312
+        Height = 15
+        Top = 23
+        Width = 40
+        Caption = 'ОтделY'
+        ParentColor = False
+      end
+      object Label25: TLabel
+        Left = 680
+        Height = 15
+        Top = 23
+        Width = 44
+        Caption = 'Отдел G'
+        ParentColor = False
+      end
+      object Button6: TButton
+        Left = 312
+        Height = 25
+        Top = 376
+        Width = 75
+        Caption = 'Заполнить'
+        OnClick = Button6Click
+        TabOrder = 5
+      end
+    end
+  end
+  object Label1: TLabel
+    Left = 560
+    Height = 15
+    Top = 472
+    Width = 270
+    Caption = 'Выполнил студент группы з-25а Рассамахин Н.Я.'
+    ParentColor = False
+  end
+end

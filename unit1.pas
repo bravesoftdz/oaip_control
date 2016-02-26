@@ -286,7 +286,7 @@ begin
             n:=(g[i,4]*d)*s/100;
             g[i,j] := g[i,4]*d-n; //заполняем ЗП сотрудников G
             g[i,3] := n;          //заполняем налоги сотрудников G
-            StringGrid2.Cells[j,i]:= FloatToStr(g[i,j]);
+            StringGrid3.Cells[j,i]:= FloatToStr(g[i,j]);
       end;
     end;
 
