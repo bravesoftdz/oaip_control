@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ComCtrls,
-  StdCtrls, ExtCtrls, Menus, ActnList;
+  StdCtrls, ExtCtrls, Menus, ActnList, Grids;
 
 type
 
@@ -16,6 +16,7 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    Button4: TButton;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
@@ -36,8 +37,10 @@ type
     Label8: TLabel;
     Label9: TLabel;
     ListBox1: TListBox;
+    Memo1: TMemo;
     PageControl1: TPageControl;
     Panel1: TPanel;
+    StringGrid1: TStringGrid;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
     TabSheet3: TTabSheet;
@@ -46,6 +49,7 @@ type
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
     procedure PageControl1Change(Sender: TObject);
   private
     { private declarations }
@@ -148,9 +152,32 @@ begin
 
   for i:=1 to l do
       begin
-      ListBox1.Items.Add(IntToStr(s)+'стоп. = '+FloatToStr(lit*s)+'   '+FloatToStr(pipe*s));
+      ListBox1.Items.Add(IntToStr(s)+'стоп. = '+FloatToStr(lit*s)+' л. = '+FloatToStr(pipe*s) + ' пайпа;');
       s:= s+c;
       end;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+  k,n,i,j: integer;
+  a: array[1 .. 5, 1 .. 6] of integer;
+  max: double;
+begin
+  Memo1.Clear;
+  n:=5;
+  k:=6;
+  max:=0;
+    for i:=1 to n do begin
+    for j:=1 to k do begin
+      a[i,j] := Random(10*8+50); //задаем число голосов
+      if max < a[i,2] then begin
+      max:=a[i,2];
+      end;
+      Memo1.Text:=Memo1.Text+IntToStr(i)+','+IntToStr(2)+' ; '; //вывод адреса таблицы, в которой есть элементы больше n
+
+      StringGrid1.Cells[i,j]:= IntToStr(a[i,j]);
+      end;
+    end;
 end;
 
 
